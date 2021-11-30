@@ -17,10 +17,14 @@ $p = new PDFlib();
     } catch (\Exception $e) {
       echo '';
     }
+  try {
+      $pagecount = $p->pcos_get_number($doc, "length:pages");
+    } catch (\Exception $e) {
+      echo '';
+  }
 
     // Подсчет страниц в файле
 
-      $pagecount = $p->pcos_get_number($doc, "length:pages");
 
 
 

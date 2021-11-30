@@ -43,7 +43,6 @@
             session_start();
             $_SESSION['path_file'] = $_FILES['path']['name'];
           }
-          echo $_FILES['path']['tmp_name'];
         ?>
         </div>
       </div>
