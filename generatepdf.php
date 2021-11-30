@@ -19,12 +19,10 @@ $p = new PDFlib();
     }
 
     // Подсчет страниц в файле
-    try {
+
       $pagecount = $p->pcos_get_number($doc, "length:pages");
 
-    } catch (\Exception $e) {
-      echo "";
-    }
+
 
     // Вывод всех страниц
     for ($pageno = 1; $pageno <= $pagecount; $pageno++){

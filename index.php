@@ -22,6 +22,14 @@
           <!-- -->
         </div>
       </div>
+
+
+      <div class="formcontainer">
+        <div class="choosefile">
+          <form action="index.php"  class="submitform" method="post" enctype="multipart/form-data">
+          <input  type="file" name="path"></input>
+          <button type="submit" name="submit">download</button>
+        </form>
         <?php
           // Перенос файла в папку PDF,чтобы generatedpdf.php смог найти файл
           if (!empty($_FILES['path'])) {
@@ -35,15 +43,8 @@
             session_start();
             $_SESSION['path_file'] = $_FILES['path']['name'];
           }
+          echo $_FILES['path']['tmp_name'];
         ?>
-
-      <div class="formcontainer">
-        <div class="choosefile">
-          <form action="index.php"  class="submitform" method="post" enctype="multipart/form-data">
-          <input  type="file" name="path"></input>
-          <button type="submit" name="submit">download</button>
-        </form>
-
         </div>
       </div>
 
