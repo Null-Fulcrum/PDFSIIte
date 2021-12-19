@@ -16,9 +16,9 @@ background-image: url("Img/background.png");
   align-items: center;
 }
 .choosefile{
-  float: left;
-  height: 100px;
-  width: 300px;
+  height: 10%;
+  width: 50%;
+  margin: 0 auto;
   background: white;
   border-radius: 10px;
   display: flex;
@@ -39,8 +39,7 @@ background-image: url("Img/background.png");
   width: 40%;
   height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+
 }
 .submitform{
   margin: 0 auto;
@@ -50,4 +49,28 @@ background-image: url("Img/background.png");
 button{
   font-size: 20px;
   width: 100%;
+}
+.colorList{
+  height: 600px;
+  width: 360px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  background: white;
+  border-radius: 10px;
+  overflow: auto;
+}
+.list{
+  height: 100%;
+  width: 100%;
+  list-style-type: none;
+}
+.comment{
+  height: 200px;
+  width: 360px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
